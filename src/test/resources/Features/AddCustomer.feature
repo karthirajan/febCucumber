@@ -1,14 +1,17 @@
 #Author: your.email@your.domain.com
+@sanity
 Feature: add customer
 
  Background:
     And User click on add customer button
 
+@hardcoded @smoke
   Scenario: add customer flow validation
     When User enter the values in fields
     And User click on submit button
     Then User should be displayed customer ID is generated
 
+@hardcoded
   Scenario: add customer flow validation by using 1 dim list
     When User enter the values in fields by using one dim list
       | karthi | rajan | karthi@gmail.com | chennai | 67566536787 |
